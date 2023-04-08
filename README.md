@@ -1,4 +1,4 @@
-pre-view --> gta-rewards-nui.vercel.app
+pre-view --> https://gta-rewards-nui.vercel.app/
 
 UI Interface for FiveM Server using React and TypeScript
 
