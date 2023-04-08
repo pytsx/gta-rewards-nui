@@ -1,0 +1,366 @@
+{
+    "daily_member_reward": {
+        "id": 1,
+        "title": "Recompensa Diária Membros",
+        "description": "Resgate sua recompensa diária se você é um membro ativo.",
+        "redeems": [
+            {
+                "id": 10,
+                "title": "Missão 1",
+                "description": "Prêmio diário do primeiro dia",
+                "reward": "50",
+                "day": "2023-04-03",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 202,
+                "title": "Missão 2",
+                "description": "Prêmio diário do segundo dia",
+                "reward": "75",
+                "day": "2023-04-04",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 32,
+                "title": "Missão 3",
+                "description": "Prêmio diário do terceiro dia",
+                "reward": "100",
+                "day": "2023-04-05",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 42,
+                "title": "Missão 4",
+                "description": "Prêmio diário do quarto dia",
+                "reward": "125",
+                "day": "2023-04-06",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 52,
+                "title": "Missão 5",
+                "description": "Prêmio diário do quinto dia",
+                "reward": "150",
+                "day": "2023-04-07",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 62,
+                "title": "Missão 6",
+                "description": "Prêmio diário do sexto dia",
+                "reward": "175",
+                "day": "2023-04-08",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 72,
+                "title": "Missão 7",
+                "description": "Prêmio diário do sétimo dia",
+                "reward": "200",
+                "day": "2023-04-09",
+                "metadata": {
+                    "category": "daily_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            }
+        ]
+    },
+    "daily_vip_reward": {
+        "id": 2,
+        "title": "Recompensa Diária Vips",
+        "description": "Resgate sua recompensa diária se você é um membro vip ativo.",
+        "redeems": [
+            {
+                "id": 71,
+                "title": "Missão 1",
+                "description": "Prêmio diário do primeiro dia",
+                "reward": "100",
+                "day": "2023-04-03",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 20008,
+                "title": "Missão 2",
+                "description": "Prêmio diário do segundo dia",
+                "reward": "120",
+                "day": "2023-04-04",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 39,
+                "title": "Missão 3",
+                "description": "Prêmio diário do terceiro dia",
+                "reward": "150",
+                "day": "2023-04-05",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 41,
+                "title": "Missão 4",
+                "description": "Prêmio diário do quarto dia",
+                "reward": "180",
+                "day": "2023-04-06",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 52,
+                "title": "Missão 5",
+                "description": "Prêmio diário do quinto dia",
+                "reward": "200",
+                "day": "2023-04-07",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 63,
+                "title": "Missão 6",
+                "description": "Prêmio diário do sexto dia",
+                "reward": "250",
+                "day": "2023-04-08",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 781,
+                "title": "Missão 7",
+                "description": "Prêmio diário do sétimo dia",
+                "reward": "300",
+                "day": "2023-04-09",
+                "metadata": {
+                    "category": "daily_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            }
+        ]
+    },
+    "weekly_member_reward": {
+        "id": 3,
+        "title": "Recompensa Semanal Membros",
+        "description": "Resgate sua recompensa semanal se você é um membro ativo.",
+        "redeems": [
+            {
+                "id": 145,
+                "title": "Dia 1",
+                "description": "Resgate sua recompensa da primeira semana",
+                "reward": "100",
+                "day": "2023-04-03",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 245,
+                "title": "Dia 2",
+                "description": "Resgate sua recompensa da segunda semana",
+                "reward": "150",
+                "day": "2023-04-04",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 345,
+                "title": "Dia 3",
+                "description": "Resgate sua recompensa da terceira semana",
+                "reward": "200",
+                "day": "2023-04-05",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 445,
+                "title": "Dia 4",
+                "description": "Resgate sua recompensa da quarta semana",
+                "reward": "250",
+                "day": "2023-04-06",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 545,
+                "title": "Dia 5",
+                "description": "Resgate sua recompensa da quinta semana",
+                "reward": "300",
+                "day": "2023-04-07",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 645,
+                "title": "Dia 6",
+                "description": "Resgate sua recompensa da sexta semana",
+                "reward": "350",
+                "day": "2023-04-08",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 745,
+                "title": "Dia 7",
+                "description": "Resgate sua recompensa da sétima semana",
+                "reward": "400",
+                "day": "2023-04-09",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 1
+                },
+                "isRewarded": false
+            }
+        ]
+    },
+    "weekly_vip_reward": {
+        "id": 4,
+        "title": "Recompensa Semanal Vips",
+        "description": "Resgate sua recompensa semanal se você é um membro vip ativo.",
+        "redeems": [
+            {
+                "id": 1647,
+                "title": "Dia 1",
+                "description": "Prêmio diário do primeiro dia",
+                "reward": "50",
+                "day": "2023-04-03",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 2785,
+                "title": "Dia 2",
+                "description": "Prêmio diário do segundo dia",
+                "reward": "60",
+                "day": "2023-04-04",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 3645,
+                "title": "Dia 3",
+                "description": "Prêmio diário do terceiro dia",
+                "reward": "70",
+                "day": "2023-04-05",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 4354,
+                "title": "Dia 4",
+                "description": "Prêmio diário do quarto dia",
+                "reward": "80",
+                "day": "2023-04-06",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 5435,
+                "title": "Dia 5",
+                "description": "Prêmio diário do quinto dia",
+                "reward": "90",
+                "day": "2023-04-07",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 6354,
+                "title": "Dia 6",
+                "description": "Prêmio diário do sexto dia",
+                "reward": "100",
+                "day": "2023-04-08",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            },
+            {
+                "id": 7354,
+                "title": "Dia 7",
+                "description": "Prêmio diário do sétimo dia",
+                "reward": "150",
+                "day": "2023-04-09",
+                "metadata": {
+                    "category": "weekly_vip",
+                    "number": 1
+                },
+                "isRewarded": false
+            }
+        ]
+    }
+}

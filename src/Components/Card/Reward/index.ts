@@ -1,0 +1,1 @@
+export { CardReward } from './Card.reward'

@@ -1,0 +1,29 @@
+* {
+    user-select: none;
+}
+
+.animatedBG {
+    animation: hue 20s infinite alternate-reverse;
+}
+
+@keyframes hue {
+    0% {
+        filter: blur(100px);
+    }
+
+    25% {
+        filter: blur(70px);
+    }
+
+    50% {
+        filter: blur(100px);
+    }
+
+    75% {
+        filter: blur(70px);
+    }
+
+    100% {
+        filter: blur(100px);
+    }
+}
