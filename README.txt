@@ -9,7 +9,7 @@ How to run the project
 
 To run this project on your local machine, follow these steps:
 
-Clone this repository on your local machine using the command git clone https://github.com/henriquedelimap/gta_reward.git.
+Clone this repository on your local machine using the command git clone https://github.com/pytsx/gta-rewards-nui.git.
 Make sure you have Node.js installed on your local machine.
 Open the project directory in the terminal.
 Install all project dependencies using the command npm install.
@@ -21,7 +21,7 @@ If you want to contribute to this project, follow these steps:
 
 Fork this repository to your GitHub account.
 
-Clone the repository on your local machine using the command git clone https://github.com/henriquedelimap/gta_reward.git.
+Clone the repository on your local machine using the command git clone https://github.com/pytsx/gta-rewards-nui.git.
 Create a new branch with the name of your contribution using the command git checkout -b branch-name.
 Make the changes you want in the code.
 Commit the changes using the command git commit -m "Commit message".
