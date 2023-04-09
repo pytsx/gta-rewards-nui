@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import { IProvider, IRewardContext, RedeemType, RewardType } from "../../Type/Context";
 import { useAPI } from "../API";
 import { v4 as uuidv4 } from "uuid";
 
-let init = {
+const initialRedeem: RedeemType = {
     id: 0,
     title: "",
     description: "",
@@ -14,58 +14,73 @@ let init = {
         number: 0
     },
     isRewarded: false
-}
-let initRewards = {
-    "id": 0,
-    "title": "",
-    "description": "",
-    "redeems": [init]
-}
+};
 
-export const RewardContext = React.createContext<IRewardContext>({
-    reward: initRewards,
+const initialReward: RewardType = {
+    id: 0,
+    title: "",
+    description: "",
+    category: "",
+    redeems: [initialRedeem]
+};
+
+export const RewardContext = createContext<IRewardContext>({
+    reward: initialReward,
     redeems: [],
-    currentRedeem: init,
+    currentRedeem: initialRedeem,
     handleReward: () => { },
     handleRedeem: () => { }
-})
+});
 
 export const RewardProvider = ({ children }: IProvider) => {
-    const { response } = useAPI()
-    const responseArray = Object.entries(response)
-
-    let rewardResponse = responseArray[0][1]
-
-    const [redeems, setRedeems] = React.useState<RedeemType[]>(rewardResponse.redeems)
-    const [reward, setReward] = React.useState<RewardType>(rewardResponse)
-    const [currentRedeem, setCurrentRedeem] = React.useState<RedeemType>(init)
+    const { response } = useAPI();
+    const [rewards, setRewards] = useState<RewardType[]>(Object.values(response));
+    const [reward, setReward] = useState<RewardType>(rewards[0]);
+    const [redeems, setRedeems] = useState<RedeemType[]>(reward.redeems);
+    const [currentRedeem, setCurrentRedeem] = useState<RedeemType>(initialRedeem);
 
     const handleReward = (newReward: RewardType) => {
-        setReward(newReward)
-        setRedeems(newReward.redeems)
-    }
+        const findNewReward = rewards.find(reward => reward.id === newReward.id);
+        if (findNewReward) {
+            setReward(findNewReward);
+            setRedeems(findNewReward.redeems);
+        } else {
+            console.log("Reward não encontrado.");
+        }
+    };
 
     const handleRedeem = (item: RedeemType) => {
-        if (item.id == currentRedeem?.id) {
-            setCurrentRedeem(prev => ({
-                ...prev,
-                isRewarded: true
-            }))
-            setRedeems(prev => prev.map(item => {
-                if (item.id === currentRedeem.id) {
-                    return {
-                        ...item,
-                        isRewarded: true
-                    }
+        const updatedRedeems = redeems.map(redeem => {
+            if (redeem.id === item.id) {
+                return { ...redeem, isRewarded: true }
+            } else {
+                return redeem
+            }
+        })
+
+        setRedeems(updatedRedeems)
+
+
+        const updatedRewards = rewards.map(reward => {
+            if (reward.category === item.metadata.category) {
+                const updatedReward = { ...reward }
+                const updatedRedeemIndex = updatedReward.redeems.findIndex(redeem => redeem.id === item.id);
+                if (updatedRedeemIndex !== -1) {
+                    updatedReward.redeems[updatedRedeemIndex] = { ...updatedReward.redeems[updatedRedeemIndex], isRewarded: true }
                 }
-                return item
-            }))
-        }
+                return updatedReward
+            } else {
+                return reward
+            }
+        })
+
+        setRewards(updatedRewards)
+
+        setCurrentRedeem(prev => ({ ...prev, isRewarded: true }))
+
     }
 
     React.useEffect(() => {
-        setRedeems(reward.redeems)
-        console.log(redeems);
 
         let today = new Date().toISOString().slice(0, 10).toString()
         let pastReward = redeems.filter((item: RedeemType) => item.day < today ? item.isRewarded = true : item.isRewarded)
