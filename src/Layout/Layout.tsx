@@ -2,6 +2,7 @@ import React from "react"
 import { bg, noise_6, R, R2, money, money_2, money_3 } from "../assets"
 import { IChildren } from "../Common/Type/Utils"
 import { Circle } from "../Components/Circle"
+import { Typography } from "@mui/material"
 
 
 
