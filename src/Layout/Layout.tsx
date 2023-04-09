@@ -6,20 +6,27 @@ import { Circle } from "../Components/Circle"
 
 
 export const Layout = ({ children }: IChildren) => {
-    const [isLoaded, setIsLoaded] = React.useState<boolean>(false)
-    const handleLoad = () => {
-        setIsLoaded(true)
-    }
+    const [isImageLoaded, setIsImageLoaded] = React.useState<boolean>(false)
+
+    React.useEffect(() => {
+        const image = new Image();
+        image.onload = () => {
+            setIsImageLoaded(true);
+        };
+        image.src = bg;
+    }, []);
+
     return (
         <div
-            onLoad={handleLoad}
             style={{
                 width: '100vw',
                 height: '100vh',
                 position: 'fixed',
                 backgroundImage: `url(${bg})`,
                 backgroundSize: '100vw 100vh',
-                display: isLoaded ? 'flex' : 'none',
+                display: isImageLoaded ? 'flex' : 'none',
+                opacity: isImageLoaded ? 1 : 0,
+                transition: 'all 1s ease',
                 alignItems: 'center',
                 justifyContent: 'center',
             }}>
