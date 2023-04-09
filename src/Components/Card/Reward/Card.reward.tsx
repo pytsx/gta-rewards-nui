@@ -9,8 +9,8 @@ import { RedeemType } from "../../../Common/Type/Context"
 
 export const CardReward = ({ item }: ICardReward) => {
     const { currentRedeems, handleRedeem } = useReward()
-    const [currentRedeem, setCurrentRedeem] = React.useState<RedeemType>()
     const [hover, setHover] = React.useState<boolean>(false)
+    const [currentRedeem, setCurrentRedeem] = React.useState<RedeemType>()
 
     React.useEffect(() => {
         if (currentRedeems.length >= 0) {

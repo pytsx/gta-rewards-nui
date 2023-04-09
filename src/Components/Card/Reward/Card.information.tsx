@@ -2,11 +2,13 @@ import { Box, Stack, Typography } from "@mui/material"
 import { MdStar } from "react-icons/md"
 import { R } from "../../../assets"
 import { useReward } from "../../../Common/Context/Reward"
+import React from "react"
 
 
 export const CardInformation = () => {
     let cor = '#2d2d2d'
-    const { currentRedeem, reward } = useReward()
+    const { currentRedeems, reward } = useReward()
+
     return (
         <Box sx={{
             width: '100%',
@@ -36,7 +38,7 @@ export const CardInformation = () => {
                         transform: 'scale(1.32)',
                         transformOrigin: 'bottom',
                         transition: 'all 200ms ease-in-out',
-                        filter: currentRedeem?.isRewarded ? 'grayscale(80%)' : 'grayscale(0%)',
+                        filter: 'grayscale(0%)',
                         zIndex: 100
                     }} />
                 </div>
