@@ -15,7 +15,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": true,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 202,
@@ -27,7 +29,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 32,
@@ -39,7 +43,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
                 "id": 42,
@@ -51,7 +57,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
                 "id": 52,
@@ -63,7 +71,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 62,
@@ -75,7 +85,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
                 "id": 72,
@@ -87,7 +99,9 @@
                     "category": "daily_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             }
         ]
     },
@@ -107,7 +121,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": true,
+                "isAvalible": false,
+                "isRewardable": false
             },
             {
                 "id": 20008,
@@ -119,7 +135,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 39,
@@ -131,10 +149,12 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
-                "id": 41,
+                "id": 4231,
                 "title": "Missão 4",
                 "description": "Prêmio diário do quarto dia",
                 "reward": "180",
@@ -143,7 +163,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
                 "id": 52,
@@ -155,7 +177,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             },
             {
                 "id": 63,
@@ -167,7 +191,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": true,
+                "isAvalible": false,
+                "isRewardable": false
             },
             {
                 "id": 781,
@@ -179,7 +205,9 @@
                     "category": "daily_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": false
             }
         ]
     },
@@ -199,7 +227,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 245,
@@ -211,7 +241,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 345,
@@ -223,7 +255,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 445,
@@ -235,7 +269,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 545,
@@ -247,7 +283,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 645,
@@ -259,7 +297,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 745,
@@ -271,7 +311,9 @@
                     "category": "weekly_member",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             }
         ]
     },
@@ -291,7 +333,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 2785,
@@ -303,7 +347,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 3645,
@@ -315,7 +361,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 4354,
@@ -327,7 +375,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 5435,
@@ -339,7 +389,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 6354,
@@ -351,7 +403,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             },
             {
                 "id": 7354,
@@ -363,7 +417,9 @@
                     "category": "weekly_vip",
                     "number": 1
                 },
-                "isRewarded": false
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
             }
         ]
     }

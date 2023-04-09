@@ -4,11 +4,28 @@ import { useReward } from "../../../Common/Context/Reward"
 import { ICardReward } from "../../../Common/Type/Components"
 import React from "react"
 import { Effect } from "../../Effect"
+import { RedeemType } from "../../../Common/Type/Context"
 
 
 export const CardReward = ({ item }: ICardReward) => {
-    const { currentRedeem, handleRedeem } = useReward()
+    const { currentRedeems, handleRedeem } = useReward()
+    const [currentRedeem, setCurrentRedeem] = React.useState<RedeemType>()
     const [hover, setHover] = React.useState<boolean>(false)
+
+    React.useEffect(() => {
+        if (currentRedeems.length >= 0) {
+
+            currentRedeems.map((redeem: RedeemType) => {
+                if (item == redeem) {
+                    setCurrentRedeem(redeem)
+                }
+            })
+        }
+    }, [currentRedeems])
+
+    let equalIDs = item?.id == currentRedeem?.id
+    let isRewardable = Boolean(!currentRedeem?.isRewarded && currentRedeem?.isAvalible && currentRedeem?.isRewardable && item.isRewardable)
+    let avalible = equalIDs && isRewardable
     let corBorda_2 = '#ff0000'
     let corBorda = '#0066cc'
     return (
@@ -28,13 +45,13 @@ export const CardReward = ({ item }: ICardReward) => {
                 border: item?.isRewarded ? '1px solid #2d2d2d' : '1px solid #fafafa22',
                 m: '.08rem',
                 position: 'relative',
-                cursor: item?.id == currentRedeem?.id && !currentRedeem?.isRewarded ? 'pointer' : 'default',
+                cursor: avalible ? 'pointer' : 'default',
                 overflow: 'hidden'
             }}>
 
             <Effect
                 cor={corBorda}
-                display={item?.id == currentRedeem?.id && !currentRedeem?.isRewarded}
+                display={avalible}
                 hover={!hover}
                 left={0.1}
                 bottom={0}
@@ -42,7 +59,7 @@ export const CardReward = ({ item }: ICardReward) => {
             />
             <Effect
                 cor={corBorda_2}
-                display={item?.id == currentRedeem?.id && !currentRedeem?.isRewarded}
+                display={avalible}
                 hover={hover}
                 right={0.1}
                 top={0}
