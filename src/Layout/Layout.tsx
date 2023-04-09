@@ -1,3 +1,4 @@
+import React from "react"
 import { bg, noise_6 } from "../assets"
 import { IChildren } from "../Common/Type/Utils"
 import { Circle } from "../Components/Circle"
@@ -5,17 +6,23 @@ import { Circle } from "../Components/Circle"
 
 
 export const Layout = ({ children }: IChildren) => {
+    const [isLoaded, setIsLoaded] = React.useState<boolean>(false)
+    const handleLoad = () => {
+        setIsLoaded(true)
+    }
     return (
-        <div style={{
-            width: '100vw',
-            height: '100vh',
-            position: 'fixed',
-            backgroundImage: `url(${bg})`,
-            backgroundSize: '100vw 100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-        }}>
+        <div
+            onLoad={handleLoad}
+            style={{
+                width: '100vw',
+                height: '100vh',
+                position: 'fixed',
+                backgroundImage: `url(${bg})`,
+                backgroundSize: '100vw 100vh',
+                display: isLoaded ? 'flex' : 'none',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}>
 
 
             <Circle top={60} left={30} color="#0066cc80" />
