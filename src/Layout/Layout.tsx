@@ -1,5 +1,5 @@
 import React from "react"
-import { bg, noise_6 } from "../assets"
+import { bg, noise_6, R, R2, money, money_2, money_3 } from "../assets"
 import { IChildren } from "../Common/Type/Utils"
 import { Circle } from "../Components/Circle"
 
@@ -9,12 +9,26 @@ export const Layout = ({ children }: IChildren) => {
     const [isImageLoaded, setIsImageLoaded] = React.useState<boolean>(false)
 
     React.useEffect(() => {
-        const image = new Image();
-        image.onload = () => {
-            setIsImageLoaded(true);
+        const imageUrls = [
+            bg, noise_6, R, R2, money, money_2, money_3
+        ];
+
+        let loadedCount = 0;
+
+        const checkAllImagesLoaded = () => {
+            loadedCount++;
+            if (loadedCount === imageUrls.length) {
+                setIsImageLoaded(true);
+            }
         };
-        image.src = bg;
+
+        imageUrls.forEach((imageUrl) => {
+            const image = new Image();
+            image.onload = checkAllImagesLoaded;
+            image.src = imageUrl;
+        });
     }, []);
+
 
     return (
         <div
