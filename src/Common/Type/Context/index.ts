@@ -12,6 +12,7 @@ export interface IAPIContext {
 }
 export interface IRewardContext {
     reward: RewardType
+    rewards: RewardType[]
     redeems: RedeemType[]
     currentRedeems: RedeemType[]
     handleReward: (newReward: RewardType) => void

@@ -27,6 +27,7 @@ const initialReward: RewardType = {
 
 export const RewardContext = createContext<IRewardContext>({
     reward: initialReward,
+    rewards: [initialReward],
     redeems: [],
     currentRedeems: [initialRedeem],
     handleReward: () => { },
@@ -39,6 +40,7 @@ export const RewardProvider = ({ children }: IProvider) => {
     const [reward, setReward] = useState<RewardType>(rewards[0]);
     const [redeems, setRedeems] = useState<RedeemType[]>(reward.redeems);
     const [currentRedeems, setCurrentRedeems] = useState<RedeemType[]>([initialRedeem]);
+
 
     const handleReward = (newReward: RewardType) => {
         const findNewReward = rewards.find(reward => reward.id === newReward.id);
@@ -106,7 +108,7 @@ export const RewardProvider = ({ children }: IProvider) => {
 
 
     return (
-        <RewardContext.Provider value={{ reward, redeems, currentRedeems, handleReward, handleRedeem }}>
+        <RewardContext.Provider value={{ reward, rewards, redeems, currentRedeems, handleReward, handleRedeem }}>
             {children}
         </RewardContext.Provider>
     )

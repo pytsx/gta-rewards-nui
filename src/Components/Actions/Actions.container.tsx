@@ -3,7 +3,9 @@ import { IActions } from "../../Common/Type/Components"
 import { Action } from "./Action/Action"
 import { useAPI } from "../../Common/Context/API"
 import { RewardType } from "../../Common/Type/Context"
-
+import { useReward } from "../../Common/Context/Reward"
+import { generateColors } from "../../Common/Utils"
+import { v4 as uuidv4 } from "uuid"
 export const ActionsContainer = ({
     left,
     top,
@@ -14,26 +16,19 @@ export const ActionsContainer = ({
 }: IActions) => {
 
     const { response } = useAPI()
+    const { rewards } = useReward()
 
-    let actionsArr = Object.entries(response)
 
-
-    let colors = [
+    let colors__1 = [
         "#FFB347",
         "#B19CD9",
         "#77DD77",
         "#FF6961"
     ]
 
-    let action_1 = [colors[0], ...actionsArr[0]];
-    let action_2 = [colors[1], ...actionsArr[1]];
-    let action_3 = [colors[2], ...actionsArr[2]];
-    let action_4 = [colors[3], ...actionsArr[3]];
+    let colors = generateColors(rewards.length)
 
-    type actionsType = typeof action_1[]
-    let actions: actionsType = []
-    actions.push(action_1, action_2, action_3, action_4)
-
+    let actions = colors.map((color, index) => [color, rewards[index]])
 
     right = !!right ? right : (-Number(width.split('rem')[0]) + 'rem')
     return (
@@ -57,7 +52,7 @@ export const ActionsContainer = ({
             {
                 actions.map(action => (
 
-                    <Action rewardProps={action[2] as RewardType} key={action[0] as string} cor={action[0] as string} />
+                    <Action actionsLength={actions.length} rewardProps={action[1] as RewardType} key={uuidv4()} cor={action[0] as string} />
                 ))
             }
 

@@ -5,7 +5,7 @@ import { IAction } from "../../../Common/Type/Components"
 import { useReward } from "../../../Common/Context/Reward"
 
 
-export const Action = ({ cor, rewardProps }: IAction) => {
+export const Action = ({ cor, rewardProps, actionsLength }: IAction) => {
     const [hover, setHover] = useState(false)
     const { handleReward, reward } = useReward()
     return (
@@ -15,8 +15,8 @@ export const Action = ({ cor, rewardProps }: IAction) => {
             onMouseLeave={() => setHover(false)}
 
             sx={{
-                width: hover || rewardProps.id == reward.id ? '200%' : '65%',
-                height: 'calc(100%/ 4.2)',
+                width: hover || rewardProps?.id == reward.id ? '200%' : '65%',
+                height: `calc(100%/ ${actionsLength}.2)`,
                 cursor: 'pointer',
                 transition: 'all 100ms linear',
                 borderRadius: '0 .2rem .2rem 0',
@@ -47,7 +47,7 @@ export const Action = ({ cor, rewardProps }: IAction) => {
                     minHeight="100%"
                     maxHeight="100%"
                     display={true}
-                    hover={hover || rewardProps.id == reward.id}
+                    hover={hover || rewardProps?.id == reward.id}
                     top={-0}
                     right={0}
                 />

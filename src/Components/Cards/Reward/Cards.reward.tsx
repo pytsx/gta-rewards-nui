@@ -2,7 +2,7 @@ import { Stack } from "@mui/material"
 import { CardReward } from "../../Card/Reward"
 import { useReward } from "../../../Common/Context/Reward"
 import { RedeemType } from "../../../Common/Type/Context"
-
+import { v4 as uuidv4 } from "uuid"
 export const CardsReward = () => {
     const { redeems } = useReward()
 

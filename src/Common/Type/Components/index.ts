@@ -25,6 +25,7 @@ export interface IActions extends IPosition, ISize {
 
 export interface IAction extends IStyle {
     rewardProps: RewardType
+    actionsLength: number
 }
 
 export interface IStyle {
