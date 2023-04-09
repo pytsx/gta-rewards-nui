@@ -7,7 +7,7 @@ import React from "react"
 
 export const CardInformation = () => {
     let cor = '#2d2d2d'
-    const { currentRedeems, reward } = useReward()
+    const { reward } = useReward()
 
     return (
         <Box sx={{
