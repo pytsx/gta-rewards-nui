@@ -53,9 +53,10 @@ export const RewardProvider = ({ children }: IProvider) => {
     };
 
     const handleRedeem = (item: RedeemType) => {
-        let currentAvalible = item.isAvalible && item.isRewardable && !item.isRewarded
+        let currentAvalible = item?.isAvalible && item?.isRewardable && !item.isRewarded
+
         const updatedRedeems = redeems.map(redeem => {
-            if (redeem.id === item.id && currentAvalible) {
+            if (redeem?.id === item?.id && currentAvalible) {
                 return { ...redeem, isRewarded: true }
             } else {
                 return redeem
@@ -66,9 +67,9 @@ export const RewardProvider = ({ children }: IProvider) => {
 
 
         const updatedRewards = rewards.map(reward => {
-            if (reward.category === item.metadata.category) {
+            if (reward?.category === item?.metadata.category) {
                 const updatedReward = { ...reward }
-                const updatedRedeemIndex = updatedReward.redeems.findIndex(redeem => redeem.id === item.id && currentAvalible);
+                const updatedRedeemIndex = updatedReward.redeems.findIndex(redeem => redeem?.id === item?.id && currentAvalible);
                 if (updatedRedeemIndex !== -1) {
                     updatedReward.redeems[updatedRedeemIndex] = { ...updatedReward.redeems[updatedRedeemIndex], isRewarded: true }
                 }
@@ -78,6 +79,7 @@ export const RewardProvider = ({ children }: IProvider) => {
             }
         })
         setRewards(updatedRewards)
+
         setCurrentRedeems(prev => ({ ...prev, isRewarded: true }))
     }
 
@@ -85,16 +87,20 @@ export const RewardProvider = ({ children }: IProvider) => {
         if (reward.category.includes('weekly')) {
             let today = new Date().toISOString().slice(0, 10).toString()
 
-            let pastReward: RedeemType[] = redeems.filter((item: RedeemType) => item.day < today ? item.isRewarded = true : item.isRewarded)
-            let futureReward: RedeemType[] = redeems.filter((item: RedeemType) => item.day > today)
-            let current: RedeemType | undefined = redeems.find((item: RedeemType) => item.day == today)
+            let pastReward: RedeemType[] = redeems.filter((item: RedeemType) => item?.day < today ? item.isRewarded = true : item.isRewarded)
+            let futureReward: RedeemType[] = redeems.filter((item: RedeemType) => item?.day > today).map((item: RedeemType) => ({
+                ...item,
+                isRewardable: false
+            }))
+            let current: RedeemType | undefined = redeems.find((item: RedeemType) => item?.day == today)
 
+            console.log(futureReward);
             let week: RedeemType[] = [...pastReward, current as RedeemType, ...futureReward].filter((obj, index, array) => index === array.findIndex((t) => t === obj));
 
             setCurrentRedeems([current] as RedeemType[])
             setRedeems(week)
         } else if (reward.category.includes('daily')) {
-            let rewardable: RedeemType[] = redeems.filter((item: RedeemType) => item.isRewardable && item.isAvalible && !item.isRewarded)
+            let rewardable: RedeemType[] = redeems.filter((item: RedeemType) => item?.isRewardable && item?.isAvalible && !item?.isRewarded)
             let redeemsFilter: RedeemType[] = reward.redeems.filter((obj, index, array) => index === array.findIndex((t) => t == obj))
             setCurrentRedeems(rewardable)
             setRedeems(redeemsFilter)

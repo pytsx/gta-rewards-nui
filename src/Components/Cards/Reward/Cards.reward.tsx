@@ -16,8 +16,8 @@ export const CardsReward = () => {
                 height: '50%',
                 m: .16
             }}>
-            {redeems.map((item: RedeemType) => (
-                <CardReward key={item.id} item={item} />
+            {redeems.map((item: RedeemType, index) => (
+                <CardReward key={item?.id + index} item={item} />
             ))}
         </Stack>
     )

@@ -221,11 +221,11 @@
                 "id": 145,
                 "title": "Dia 1",
                 "description": "Resgate sua recompensa da primeira semana",
-                "reward": "100",
-                "day": "2023-04-03",
+                "reward": "120",
+                "day": "2023-04-09",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -235,11 +235,11 @@
                 "id": 245,
                 "title": "Dia 2",
                 "description": "Resgate sua recompensa da segunda semana",
-                "reward": "150",
-                "day": "2023-04-04",
+                "reward": "170",
+                "day": "2023-04-10",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -249,11 +249,11 @@
                 "id": 345,
                 "title": "Dia 3",
                 "description": "Resgate sua recompensa da terceira semana",
-                "reward": "200",
-                "day": "2023-04-05",
+                "reward": "220",
+                "day": "2023-04-11",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -263,11 +263,11 @@
                 "id": 445,
                 "title": "Dia 4",
                 "description": "Resgate sua recompensa da quarta semana",
-                "reward": "250",
-                "day": "2023-04-06",
+                "reward": "270",
+                "day": "2023-04-12",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -277,11 +277,11 @@
                 "id": 545,
                 "title": "Dia 5",
                 "description": "Resgate sua recompensa da quinta semana",
-                "reward": "300",
-                "day": "2023-04-07",
+                "reward": "320",
+                "day": "2023-04-13",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -291,11 +291,11 @@
                 "id": 645,
                 "title": "Dia 6",
                 "description": "Resgate sua recompensa da sexta semana",
-                "reward": "350",
-                "day": "2023-04-08",
+                "reward": "370",
+                "day": "2023-04-14",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -305,11 +305,11 @@
                 "id": 745,
                 "title": "Dia 7",
                 "description": "Resgate sua recompensa da sétima semana",
-                "reward": "400",
-                "day": "2023-04-09",
+                "reward": "420",
+                "day": "2023-04-15",
                 "metadata": {
                     "category": "weekly_member",
-                    "number": 1
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
@@ -324,98 +324,98 @@
         "category": "weekly_vip",
         "redeems": [
             {
-                "id": 1647,
+                "id": 14435,
                 "title": "Dia 1",
-                "description": "Prêmio diário do primeiro dia",
-                "reward": "50",
-                "day": "2023-04-03",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 2785,
-                "title": "Dia 2",
-                "description": "Prêmio diário do segundo dia",
-                "reward": "60",
-                "day": "2023-04-04",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 3645,
-                "title": "Dia 3",
-                "description": "Prêmio diário do terceiro dia",
-                "reward": "70",
-                "day": "2023-04-05",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 4354,
-                "title": "Dia 4",
-                "description": "Prêmio diário do quarto dia",
-                "reward": "80",
-                "day": "2023-04-06",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 5435,
-                "title": "Dia 5",
-                "description": "Prêmio diário do quinto dia",
-                "reward": "90",
-                "day": "2023-04-07",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 6354,
-                "title": "Dia 6",
-                "description": "Prêmio diário do sexto dia",
-                "reward": "100",
-                "day": "2023-04-08",
-                "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
-                },
-                "isRewarded": false,
-                "isAvalible": true,
-                "isRewardable": true
-            },
-            {
-                "id": 7354,
-                "title": "Dia 7",
-                "description": "Prêmio diário do sétimo dia",
-                "reward": "150",
+                "description": "Resgate sua recompensa da primeira semana",
+                "reward": "120",
                 "day": "2023-04-09",
                 "metadata": {
-                    "category": "weekly_vip",
-                    "number": 1
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 2344235,
+                "title": "Dia 2",
+                "description": "Resgate sua recompensa da segunda semana",
+                "reward": "170",
+                "day": "2023-04-10",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 34115,
+                "title": "Dia 3",
+                "description": "Resgate sua recompensa da terceira semana",
+                "reward": "220",
+                "day": "2023-04-11",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 441225,
+                "title": "Dia 4",
+                "description": "Resgate sua recompensa da quarta semana",
+                "reward": "270",
+                "day": "2023-04-12",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 51245,
+                "title": "Dia 5",
+                "description": "Resgate sua recompensa da quinta semana",
+                "reward": "320",
+                "day": "2023-04-13",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 643125,
+                "title": "Dia 6",
+                "description": "Resgate sua recompensa da sexta semana",
+                "reward": "370",
+                "day": "2023-04-14",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
+                },
+                "isRewarded": false,
+                "isAvalible": true,
+                "isRewardable": true
+            },
+            {
+                "id": 745213,
+                "title": "Dia 7",
+                "description": "Resgate sua recompensa da sétima semana",
+                "reward": "420",
+                "day": "2023-04-15",
+                "metadata": {
+                    "category": "weekly_member",
+                    "number": 2
                 },
                 "isRewarded": false,
                 "isAvalible": true,
